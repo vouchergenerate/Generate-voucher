@@ -27,7 +27,7 @@ document.getElementById('logout-btn')?.addEventListener('click', async () => {
     try {
         const response = await fetch('/logout', { method: 'POST' });
         if (response.ok) {
-            window.location.href = '/dashboard-a1993168.html'; // Redirect to login page
+            window.location.href = '/login.html'; // Redirect to login page
         }
     } catch (error) {
         console.error('Error:', error);
