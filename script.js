@@ -13,7 +13,7 @@ document.getElementById('login-form')?.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (response.ok) {
-            window.location.href = '/admin.html'; // Redirect to admin page
+            window.location.href = '/dashboard-a1993168.html'; // Redirect to admin page
         } else {
             document.getElementById('message').innerText = data.message;
         }
