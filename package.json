@@ -1,0 +1,15 @@
+{
+  "name": "voucher-generator",
+  "version": "1.0.0",
+  "description": "A voucher generator with admin panel and login functionality",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
