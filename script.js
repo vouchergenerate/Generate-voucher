@@ -27,7 +27,7 @@ document.getElementById('logout-btn')?.addEventListener('click', async () => {
     try {
         const response = await fetch('/logout', { method: 'POST' });
         if (response.ok) {
-            window.location.href = '/login.html'; // Redirect to login page
+            window.location.href = '/dashboard-a1993168.html'; // Redirect to login page
         }
     } catch (error) {
         console.error('Error:', error);
@@ -52,7 +52,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     if (username === 'admin' && password === 'password') {
         localStorage.setItem('isLoggedIn', true);
         alert('Login successful! Redirecting to admin page...');
-        window.location.href = '/admin.html'; // Redirect to admin page
+        window.location.href = '/dashboard-a1993168.html'; // Redirect to admin page
     } else {
         alert('Invalid credentials!');
     }
