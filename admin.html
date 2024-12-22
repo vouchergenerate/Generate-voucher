@@ -20,3 +20,10 @@
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+    // Check if the user is logged in before accessing the admin page
+    if (!localStorage.getItem('isLoggedIn')) {
+        alert('You are not authorized to access this page.');
+        window.location.href = '/login.html'; // Redirect to login page
+    }
+</script>

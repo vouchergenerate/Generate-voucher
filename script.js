@@ -40,3 +40,20 @@ document.addEventListener('keydown', function(event) {
         alert('Inspect Element is disabled!');
     }
 });
+
+// Handle login and set authentication flag
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Example: Hardcoded credentials for demo purposes
+    if (username === 'admin' && password === 'password') {
+        localStorage.setItem('isLoggedIn', true);
+        alert('Login successful! Redirecting to admin page...');
+        window.location.href = '/admin.html'; // Redirect to admin page
+    } else {
+        alert('Invalid credentials!');
+    }
+});
